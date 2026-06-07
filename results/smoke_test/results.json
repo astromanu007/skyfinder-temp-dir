@@ -1,0 +1,48 @@
+{
+  "experiment": "smoke_test",
+  "args": {
+    "experiment": "smoke_test",
+    "data_csv": "../data/skyfinder/skyfinder.csv",
+    "out_dir": "../results",
+    "lds": false,
+    "lds_kernel": "gaussian",
+    "lds_ks": 5,
+    "lds_sigma": 2,
+    "fds": false,
+    "fds_kernel": "gaussian",
+    "fds_ks": 5,
+    "fds_sigma": 1,
+    "start_update": 0,
+    "start_smooth": 1,
+    "fds_mmt": 0.9,
+    "reweight": "none",
+    "epochs": 2,
+    "batch_size": 16,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "img_size": 224,
+    "num_workers": 0,
+    "loss": "l1",
+    "seed": 42
+  },
+  "best_val_mae": 4.599064233567979,
+  "test": {
+    "mae": 4.408334027396308,
+    "rmse": 5.585651869032753,
+    "gmean": 2.9308719635009766,
+    "shots": {
+      "many": {
+        "l1": NaN,
+        "gmean": NaN
+      },
+      "median": {
+        "l1": 4.078691648682521,
+        "gmean": 2.6888819911661455
+      },
+      "low": {
+        "l1": 6.945432924443767,
+        "gmean": 5.643422671660131
+      }
+    }
+  }
+}
