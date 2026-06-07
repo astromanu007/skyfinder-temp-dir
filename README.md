@@ -163,7 +163,8 @@ skyfinder-temperature-dir/
 │   ├── loss.py             ← Weighted L1 / MSE / Huber / Focal losses
 │   ├── train.py            ← Full training loop (LDS + FDS + eval)
 │   └── analyze.py          ← Plots + comparison tables
-│
+│└── run_all.bat             ← One-click: run all 4 experiments
+
 ├── 📁 results/
 │   ├── comparison_bars.png
 │   ├── training_curves.png
@@ -173,8 +174,7 @@ skyfinder-temperature-dir/
 │
 ├── 📁 report/
 │   └── Manish_Dhatrak_DIR_Report.docx   ← Full written report
-│
-└── run_all.bat             ← One-click: run all 4 experiments
+
 ```
 
 ---
